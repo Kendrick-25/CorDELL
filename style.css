@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Brights';
+    src: url("alpha_brights/AlphaBrights.ttf") format('truetype');
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+html,body{
+    min-height: 100%;
+}
+
+header{
+    background-color: black;
+    padding: 5px;
+    font-variant: small-caps;
+    text-align: center;
+    color: white;
+}
+header > h1{
+    padding: 50px;
+}
+
+footer{
+    background-color: black;
+    padding: 5px;
+    color: white;
+    text-align: center;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+    font-family: Brights;
+    font-size: 2em;
+}
+section.normal{
+    background-color: white;
+}
+section.imagem{
+    background-color: rgba(51 ,51 ,51);
+    color: white;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.imagem >p{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    width: 750px;
+    padding: 30px;
+}
+section#img01{
+    background: url('navio1.png') center center no-repeat fixed;
+    background-size: cover;
+}
+section#img02{
+    background: url('navio2.png') right center no-repeat fixed;
+    background-size: cover;
+}
+section#img03{
+    background: url('navio3.png') center center no-repeat fixed;
+    background-size: cover;
+}
+section#img04{
+    background: url('fogo.png') center center no-repeat fixed;
+    background-size: cover;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(255, 115, 0);
+    font-style: italic;
+}
+
